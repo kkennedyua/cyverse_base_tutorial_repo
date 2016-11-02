@@ -13,23 +13,23 @@ Each CyVerse Tutorial or Quick Start has its own [ReadtheDocs](https://readthedo
 
 **Examples:**
 
-- Uploading a file: Quick Start
-- Cleaning FastQ reads: Quick Start
-- Uploading files to SRA: Could be both
-- Assembling a transcriptome: Tutorial
+- Upload a file: Quick Start
+- Clean FastQ reads: Quick Start
+- Upload files to SRA: Could be both
+- Assemble a transcriptome: Tutorial
 
 
 ## What this repo contains
 
 |Item|Description|Notes|
 |----|-----------|-----|
-|tutorial_template.md|Edit this template to create a tutorial|documents written in markdown will need to be covered to restructured text|
-|quickstart_template.md|Edit this template to create a quickstart|documents written in markdown will need to be covered to restructured text|
-|/img (folder)|Place images for your tutorials here|CyVerse logos and other useful images are already here| 
-|/slides (folder)|Place slides associated with your tutorial here|version controlled files preferred, PPT acceptable|
-|/workflows (folder)|Version-controlled workflows built with yED||
-|/misc (folder)|miscellaneous items associated with this tutorial| if at all possible, files should be hosted (with anonymous access) at the CyVerse public Data Commons site. A sample **conf.py** file is located here|
-|License.md|License|this license file applies to all materials created by CyVerse for this documentation|
+|tutorial_template.md|Edit this template to create a tutorial.|Documents written in Markdown will need to be converted to ReStructured text.|
+|quickstart_template.md|Edit this template to create a quick start.|Documents written in Markdown will need to be converted to ReStructured text.|
+|/img (folder)|Place images for your tutorials here.|CyVerse logos and other useful images are already here.| 
+|/slides (folder)|Place slides associated with your tutorial here.|Version-controlled files preferred, PPT acceptable.|
+|/workflows (folder)|Version-controlled workflows built with yED.||
+|/misc (folder)|Miscellaneous items associated with this tutorial.|If at all possible, files should be hosted (with anonymous access) at the CyVerse public Data Commons site. A sample **conf.py** file is located here.|
+|License.md|License|This license file applies to all materials created by CyVerse for this documentation.|
 |Contributors_maintainers.md|Contact information and recognition||
 
 
@@ -41,42 +41,42 @@ Each CyVerse Tutorial or Quick Start has its own [ReadtheDocs](https://readthedo
  
  OR
  
-- Send an email to [Tutorials@CyVerse.org](mailto:tutorials@cyverse.org)
+- Send an email to [Tutorials@CyVerse.org](mailto:tutorials@cyverse.org).
 
 ## More complex contributions
 
 ### Fixing and/or improving documentation via GitHub
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this repo to your GitHub account
-2. Make edits directly to the **markdown version** of the documentation if there is one, or if there is no markdown version, edit the version written in restructured text. Edits may be made to the fork the web interface to your GitHub account or [clone](https://help.github.com/articles/cloning-a-repository/) the repo to work on your local computer. For very significant changes (we suggest [making a new branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/). 
-3. Commit change; if working from a local copy, push those changes to your fork in Github. 
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this repo to your GitHub account.
+2. Make edits directly to the **Markdown version** of the documentation if there is one or, if there is no Markdown version, edit the version written in ReStructured text. Edits may be made to the fork in the web interface to your GitHub account, or you may [clone](https://help.github.com/articles/cloning-a-repository/) the repo to work on your local computer. For very significant changes (we suggest [making a new branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/). 
+3. Commit the changes; if working from a local copy, push those changes to your fork in GitHub. 
 4. Submit a pull request back to the master repository; you may need to act on feedback before your request is merged. 
 
 
-## Building a Tutorial from Scratch
+## Building a tutorial from scratch
 
-If you want to go beyond just creating a markdown file, you will need to install some software. 
+If you want to go beyond just creating a Markdown file, you will need to install some software. 
 
 **You will need the following software**
 
-1. Markdown Editor - Optional, but makes it easy to preview the markdown
-    - free markdown editors: 
-        - MacDown(mac): http://macdown.uranusjr.com/ 
-        - Markdown Pad(windows): http://markdownpad.com/ 
-        - ReText(linux): https://github.com/retext-project/retext 
+1. Markdown editor - Optional, but makes it easy to preview the Markdown:
+    - free Markdown editors: 
+        - MacDown (Mac): http://macdown.uranusjr.com/ 
+        - Markdown Pad (Windows): http://markdownpad.com/ 
+        - ReText (Linux): https://github.com/retext-project/retext 
 2. Python (2.7.9 or later) - This is required for the Sphinx package that will build our documentation:
     - https://www.python.org/downloads/
 3. If needed, install pip: 
     - https://packaging.python.org/installing/#install-pip-setuptools-and-wheel
-4. Sphinx - This will build our tutorials into HTML and other formats (this uses the Python package installer 'pip' so Python must be installed first); we will also install the theme we need for our documentation
+4. Sphinx - This will build our tutorials into HTML and other formats (this uses the Python package installer 'pip' so Python must be installed first); we will also install the theme we need for our documentation.
         
         $pip install sphinx sphinx-autobuild
         $ pip install sphinx_rtd_theme
-5. Pandoc - This will convert Markdown into ReStructured text
+5. Pandoc - This will convert Markdown into ReStructured text:
     - http://pandoc.org/installing.html
-6. RestView - Optional, but makes it easy to preview ReStructured text files
+6. RestView - Optional, but makes it easy to preview ReStructured text files:
     - http://rst.ninjs.org/
-7. git - We use git to version control our documentation and manage with GitHub
+7. git - We use git to version control our documentation and manage with GitHub:
     - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 
@@ -88,14 +88,14 @@ If you want to go beyond just creating a markdown file, you will need to install
 
 ### Procedure 
 
-1. Import the CyVerse base tutorial repo following GitHub's directions here: https://help.github.com/articles/importing-a-repository-with-github-importer/
-    - The CyVerse base tutorial repo URL is **https://github.com/CyVerse-learning-materials/cyverse_base_tutorial_repo**
-    - Name your repo for the name of your quick start or tutorial, e.g. 
-    *'name_quickstart'* or *'name_tutorial'*
-2. Edit the **markdown version** of the template you are working from. Save images or other files in the appropriate directories. 
-3. Delete unused templates. We will have **only one tutorial or quick start per repo.**
-4. Save your markdown as  *'name_quickstart.md'* or *'name_tutorial.md'*
-5. In the repo directory start the process of building the tutorial files:
+1. Import the CyVerse base tutorial repo following GitHub's directions here: https://help.github.com/articles/importing-a-repository-with-github-importer/.
+    - The CyVerse base tutorial repo URL is **https://github.com/CyVerse-learning-materials/cyverse_base_tutorial_repo**.
+2. Rename your repo for the name of your quick start or tutorial, e.g.,
+    *'name_quickstart'* or *'name_tutorial'*.
+3. Rename your Markdown as *'name_quickstart.md'* or *'name_tutorial.md'*.
+4. Edit the **Markdown version** of the template you are working from. Save images or other files in the appropriate directories. 
+5. Delete unused templates. We will have **only one tutorial or quick start per repo**.
+6. In the repo directory, start the process of building the tutorial files:
         
         $ sphinx-quickstart --project='title_of_your_tutorial_or_quick_start' --author="your_name" -v=1.0
         # you may accept most defaults (by hitting enter)
@@ -103,24 +103,24 @@ If you want to go beyond just creating a markdown file, you will need to install
         # Project name: the title of your tutorial/quick start
         # Author name(s): your name
         # Project version: 1.0 (all new tutorials start with v 1.0)       
-6. Convert the markdown file to ReStructured text file (which we will call *index.rst*) using Pandoc:
+7. Convert the Markdown file to a ReStructured text file (which we will call *index.rst*) using Pandoc:
 
         $ pandoc -f markdown -t rst -o index.rst your_file_name.md    
 
-    For convenience, the templates have a few ReStructured text elements that may not be properly converted by Pandoc. You will need to check the converted ReStructured text. You can use an online viewer [http://rst.ninjs.org/](http://rst.ninjs.org/) or you can view live changes using restview [http://rst.ninjs.org/](http://rst.ninjs.org/)
-7. You may need to edit the *'conf.py'* file to change the following lines:
-     - (line 52) copyright = 'YEAR, CyVerse'
-     - (line 113) html_theme = 'sphinx_rtd_theme'
-   We have provided a sample  *'conf.py'* file in the */misc* folder which you could also edit and replace.    
-8. Build the tutorial:
+    For convenience, the templates have a few ReStructured text elements that may not be properly converted by Pandoc. You will need to check the converted ReStructured text. You can use an online viewer [http://rst.ninjs.org/](http://rst.ninjs.org/) or you can view live changes using restview [http://rst.ninjs.org/](http://rst.ninjs.org/).
+8. You may need to edit the *'conf.py'* file to change the following lines. In a text editor such as Text Wrangler, search for the following and replace as noted:
+     - copyright = 'YEAR, CyVerse'
+     - html_theme = 'sphinx_rtd_theme'
+   We have provided a sample *'conf.py'* file in the */misc* folder, which you could also edit and replace.    
+9. Build the tutorial:
 
         $ make html
-9. Your HTML site will be in the _build directory that has been created. 
-10. Commit your changes and push the tutorial back to GitHub.
-11. Notify [Tutorials@CyVerse.org](mailto:Tutorials@CyVerse.org) that your tutorial is ready for inclusion in the main CyVerse documentation repo. We will review and verify the contribution, and add you as a maintainer repo in the CyVerse collection. You should make future edits following the instructions above for 'Fixing and/or improving documentation via GitHub.' Alternatively, you can host your tutorial independently on ReadTheDocs following their [instructions for importing documentation](https://docs.readthedocs.io/en/latest/getting_started.html#import-your-docs). 
+10. Your HTML site will be in the _build_ directory that has been created (**index.html**).
+11. Commit your changes and push the tutorial back to GitHub.
+12. Notify [Tutorials@CyVerse.org](mailto:Tutorials@CyVerse.org) that your tutorial is ready for inclusion in the main CyVerse documentation repo. We will review and verify the contribution, and add you as a maintainer to your repo in the CyVerse collection. You should make future edits following the instructions above for 'Fixing and/or improving documentation via GitHub.' Alternatively, you can host your tutorial independently on ReadTheDocs following their [instructions for importing documentation](https://docs.readthedocs.io/en/latest/getting_started.html#import-your-docs). 
 
 
 ## Other tutorial elements
 
-**Workflow Diagrams:** Version controlled workflow diagrams can be built using [yEd](http://www.yworks.com/products/yed).
+**Workflow Diagrams:** Version-controlled workflow diagrams can be built using [yEd](http://www.yworks.com/products/yed).
  
