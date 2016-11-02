@@ -9,5 +9,5 @@
 
 |Name|Contact Info|Institution|Notes|
 |----|------------|-----------|-----|
-|||||
+|Kathleen Kennedy|@kkennedyua|U of A||
 |||||
